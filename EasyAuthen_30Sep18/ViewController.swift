@@ -56,6 +56,9 @@ class ViewController: UIViewController {
                         for test in contentArray {
                             print("test ==> \(test)")
                         }
+                        let showName = "{" + contentArray[1] + "}"
+                        
+                        self.convertJSONtoDictionary(jsonText: showName)
                         
                     } // if
                 }   //if
@@ -70,6 +73,26 @@ class ViewController: UIViewController {
         
         
     }   // loginButton
+    
+    func convertJSONtoDictionary(jsonText: String) -> Void {
+//        let jsonText = "{\"first_name\":\"Sergey\"}"
+        print("jsonText ==> \(jsonText)")
+        var dictonary:NSDictionary?
+        
+        if let data = jsonText.data(using: String.Encoding.utf8) {
+            
+            do {
+                dictonary = try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject] as! NSDictionary
+                
+                if let myDictionary = dictonary
+                {
+                    print(" First name is: \(myDictionary["Name"]!)")
+                }
+            } catch let error as NSError {
+                print(error)
+            }
+        }
+    }
     
     
     override func viewDidLoad() {
