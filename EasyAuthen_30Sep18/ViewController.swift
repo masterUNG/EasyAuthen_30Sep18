@@ -47,7 +47,7 @@ class ViewController: UIViewController {
                     
                     let canReadData = NSString(data: myReadData, encoding: String.Encoding.utf8.rawValue)
                     
-                    let jsonString: String = canReadData as! String
+                    let jsonString: String = canReadData! as String
                     print("jsonString ==> \(jsonString)")
                     
                     let myComma = ","
@@ -82,10 +82,11 @@ class ViewController: UIViewController {
         if let data = jsonText.data(using: String.Encoding.utf8) {
             
             do {
-                dictonary = try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject] as! NSDictionary
+                dictonary = try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject] as NSDictionary?
                 
                 if let myDictionary = dictonary
                 {
+                    print("myDirectionary ==> \(myDictionary)")
                     print(" First name is: \(myDictionary["Name"]!)")
                 }
             } catch let error as NSError {
