@@ -12,6 +12,7 @@
 		C45177AB2160723E0055D831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45177A92160723E0055D831 /* Main.storyboard */; };
 		C45177AD216072400055D831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45177AC216072400055D831 /* Assets.xcassets */; };
 		C45177B0216072400055D831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45177AE216072400055D831 /* LaunchScreen.storyboard */; };
+		C45177B8216073AD0055D831 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45177B7216073AD0055D831 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C45177AC216072400055D831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C45177AF216072400055D831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C45177B1216072400055D831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45177B7216073AD0055D831 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				C45177A52160723E0055D831 /* AppDelegate.swift */,
 				C45177A72160723E0055D831 /* ViewController.swift */,
 				C45177A92160723E0055D831 /* Main.storyboard */,
+				C45177B7216073AD0055D831 /* RegisterViewController.swift */,
 				C45177AC216072400055D831 /* Assets.xcassets */,
 				C45177AE216072400055D831 /* LaunchScreen.storyboard */,
 				C45177B1216072400055D831 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45177B8216073AD0055D831 /* RegisterViewController.swift in Sources */,
 				C45177A82160723E0055D831 /* ViewController.swift in Sources */,
 				C45177A62160723E0055D831 /* AppDelegate.swift in Sources */,
 			);
