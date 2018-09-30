@@ -51,9 +51,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbY-dj-25L">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbY-dj-25L">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Register" id="UDM-tb-ccy">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="8HC-bz-rhQ">
@@ -64,14 +63,69 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6As-Dh-Wri">
+                                <rect key="frame" x="82" y="133" width="211" height="30"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEb-L3-e6G">
+                                <rect key="frame" x="82" y="171" width="211" height="30"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyC-cQ-w45">
+                                <rect key="frame" x="82" y="209" width="211" height="30"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKp-fe-UuD">
+                                <rect key="frame" x="82" y="247" width="211" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="vjb-rB-zs5" eventType="touchUpInside" id="PGX-9U-G67"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6As-Dh-Wri" firstAttribute="top" secondItem="JbY-dj-25L" secondAttribute="bottom" constant="45" id="18G-SO-2ov"/>
+                            <constraint firstItem="JbY-dj-25L" firstAttribute="trailing" secondItem="VfK-N2-UDR" secondAttribute="trailing" id="Csy-Kg-5OP"/>
+                            <constraint firstItem="CKp-fe-UuD" firstAttribute="top" secondItem="tyC-cQ-w45" secondAttribute="bottom" constant="8" id="Fba-Dv-lw8"/>
+                            <constraint firstItem="VfK-N2-UDR" firstAttribute="trailing" secondItem="gEb-L3-e6G" secondAttribute="trailing" constant="82" id="I1G-gd-kx1"/>
+                            <constraint firstItem="VfK-N2-UDR" firstAttribute="trailing" secondItem="6As-Dh-Wri" secondAttribute="trailing" constant="82" id="MBd-uN-ucg"/>
+                            <constraint firstItem="tyC-cQ-w45" firstAttribute="leading" secondItem="VfK-N2-UDR" secondAttribute="leading" constant="82" id="RLL-79-MM0"/>
+                            <constraint firstItem="6As-Dh-Wri" firstAttribute="centerX" secondItem="Myx-s8-KOd" secondAttribute="centerX" id="W9J-aK-Yc4"/>
+                            <constraint firstItem="tyC-cQ-w45" firstAttribute="top" secondItem="gEb-L3-e6G" secondAttribute="bottom" constant="8" id="b2b-Py-dfZ"/>
+                            <constraint firstItem="CKp-fe-UuD" firstAttribute="leading" secondItem="VfK-N2-UDR" secondAttribute="leading" constant="82" id="dA8-kY-tk4"/>
+                            <constraint firstItem="VfK-N2-UDR" firstAttribute="trailing" secondItem="tyC-cQ-w45" secondAttribute="trailing" constant="82" id="dWk-FR-5n8"/>
+                            <constraint firstItem="gEb-L3-e6G" firstAttribute="top" secondItem="6As-Dh-Wri" secondAttribute="bottom" constant="8" id="hwm-h1-v9A"/>
+                            <constraint firstItem="gEb-L3-e6G" firstAttribute="leading" secondItem="VfK-N2-UDR" secondAttribute="leading" constant="82" id="k9M-Gh-V5H"/>
+                            <constraint firstItem="6As-Dh-Wri" firstAttribute="leading" secondItem="VfK-N2-UDR" secondAttribute="leading" constant="82" id="opf-GJ-z39"/>
+                            <constraint firstItem="VfK-N2-UDR" firstAttribute="trailing" secondItem="CKp-fe-UuD" secondAttribute="trailing" constant="82" id="rRd-hu-YVD"/>
+                            <constraint firstItem="JbY-dj-25L" firstAttribute="top" secondItem="VfK-N2-UDR" secondAttribute="top" id="u5S-Lz-8gn"/>
+                            <constraint firstItem="JbY-dj-25L" firstAttribute="leading" secondItem="VfK-N2-UDR" secondAttribute="leading" id="uxN-0f-c5R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VfK-N2-UDR"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="6As-Dh-Wri" id="iNN-hG-gKq"/>
+                        <outlet property="passwordTextField" destination="tyC-cQ-w45" id="H90-v3-c7E"/>
+                        <outlet property="userTextField" destination="gEb-L3-e6G" id="sND-o0-QeE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbF-UE-2Uf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="61"/>
+            <point key="canvasLocation" x="1392.8" y="60.591133004926114"/>
         </scene>
     </scenes>
 </document>
