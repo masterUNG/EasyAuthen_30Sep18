@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 //    Explicit
     var userString: String = ""
     var passwordString: String = ""
-    var prefixString: String = "https://www.androidthai.in.th/iOS1/getUserWhereMaster.php?isAdd=true&User="
+    var prefixString: String = "https://www.androidthai.in.th/pen/getAllData.php"
     
     
 
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         userString = usetTextFiled.text!
         passwordString = passwordTextField.text!
         
-        let postURLString: String = prefixString + userString
+        let postURLString: String = prefixString
         print("postURLString ==> \(postURLString)")
         
         let urlPHP = URL(string: postURLString)
